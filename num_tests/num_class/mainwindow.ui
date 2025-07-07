@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Math Utilities</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="tabGcd">
+       <attribute name="title">
+        <string>GCD</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_gcd">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_a_gcd">
+          <property name="text">
+           <string>a:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="edit_a_gcd"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_b_gcd">
+          <property name="text">
+           <string>b:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="edit_b_gcd"/>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="btnComputeGcd">
+          <property name="text">
+           <string>Compute GCD</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLabel" name="labelResultGcd">
+          <property name="text">
+           <string>Result:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabPrime">
+       <attribute name="title">
+        <string>Prime</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_prime">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_n_prime">
+          <property name="text">
+           <string>n:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="edit_n_prime"/>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="btnCheckPrime">
+          <property name="text">
+           <string>Check Prime</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLabel" name="labelResultPrime">
+          <property name="text">
+           <string>Result:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabArmstrong">
+       <attribute name="title">
+        <string>Armstrong</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_armstrong">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_start_arm">
+          <property name="text">
+           <string>Start:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="edit_start_arm"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_end_arm">
+          <property name="text">
+           <string>End:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="edit_end_arm"/>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="btnFindArmstrong">
+          <property name="text">
+           <string>Find Armstrong</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QTextEdit" name="textResultArmstrong">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabQuadratic">
+       <attribute name="title">
+        <string>Quadratic</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_quad">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_a_quad">
+          <property name="text">
+           <string>a:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="edit_a_quad"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_b_quad">
+          <property name="text">
+           <string>b:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="edit_b_quad"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_c_quad">
+          <property name="text">
+           <string>c:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="edit_c_quad"/>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="btnSolveQuad">
+          <property name="text">
+           <string>Solve</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="labelResultQuad">
+          <property name="text">
+           <string>Result:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
